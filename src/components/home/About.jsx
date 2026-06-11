@@ -5,6 +5,7 @@ import "swiper/css";
 
 import Icons from '../common/Icons'
 import { CARD_DATA } from "../../utils/helper";
+import Card from "../common/Card";
 
 const About = () => {
 
@@ -47,22 +48,7 @@ const About = () => {
                 >
                     {CARD_DATA.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className="bg-soft-peach rounded-[22px] py-5 px-7.5 h-full">
-
-                                <Icons icon={"users"} />
-
-                                <h3 className="text-2xl font-semibold leading-[100%] mt-8 text-black">
-                                    {item.title}
-                                </h3>
-
-                                <p className="font-light text-[16px] leading-[150%] text-rich-black mt-4">
-                                    {item.desc}
-                                    <span className="text-orange cursor-pointer ml-1">
-                                        Read more
-                                    </span>
-                                </p>
-
-                            </div>
+                            <Card title={item.title} description={item.desc} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

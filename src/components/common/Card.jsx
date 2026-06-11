@@ -1,9 +1,9 @@
 import React from 'react'
 import Icons from './Icons'
 
-const Card = ({ title, description, linkText = "Read more" }) => {
+const Card = ({ title, description, linkText = "Read more", bgColor = "bg-soft-peach" }) => {
   return (
-     <div className='bg-soft-peach rounded-[22px] py-5 px-7.5'>
+     <div className={` rounded-[22px] py-5 px-7.5 ${bgColor}`}>
         <div>
             <Icons icon={"users"} />
         </div>
