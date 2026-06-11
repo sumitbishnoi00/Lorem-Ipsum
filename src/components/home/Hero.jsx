@@ -11,11 +11,11 @@ const Hero = ({ activePage }) => {
         <section className={`section-1 px-3 min-h-200 flex flex-col items-center transition-all duration-500 ${activePage === "home" ? "bg-[linear-gradient(107.6deg,#FF5501_8.81%,#B1106F_163.48%)]  rounded-b-[30px]" : "bg-sky-blue"} `}>
             <div className=' max-w-360 w-full px-3 py-4 flex items-center justify-between bg-white/10 backdrop:blur-md rounded-2xl'>
                 <div className='flex flex-row items-center gap-5'>
-                    <img src={activePage === "home" ? "/assets/Lorem-logo-2.webp" : "/assets/Lorem-logo.webp"} className='w-16 h-16' alt="Lorem-logo" />
-                    <h2 className={`font-bold text-[32px] leading-[100%] ${activePage === "home" ? "text-sky-blue" : "text-orange"}`}>Lorem <span className='text-white'>Ipsum</span></h2>
+                    <img src={activePage === "home" ? "/assets/Lorem-logo-2.webp" : "/assets/Lorem-logo.webp"} className='sm:w-16 w-10 sm:h-16 h-10' alt="Lorem-logo" />
+                    <h2 className={`font-bold md:text-[32px] sm:text-[28px] text-2xl leading-[100%] ${activePage === "home" ? "text-sky-blue" : "text-orange"}`}>Lorem <span className='text-white'>Ipsum</span></h2>
                 </div>
 
-                <button onClick={() => navigate(activePagePath)} className={`px-6.75 py-3.5 border border-transparent rounded-[13px] font-semibold text-[16px] leading-[100%] cursor-pointer transition-all duration-500 ${activePage === "home" ? "bg-orange text-white hover:bg-white hover:text-orange hover:border-orange" : "bg-sky-blue text-white hover:bg-white hover:text-sky-blue hover:border-sky-blue"}`} >
+                <button onClick={() => navigate(activePagePath)} className={`sm:px-6.75 px-3.5 py-3.5 border border-transparent rounded-[13px] font-semibold text-[16px] leading-[100%] cursor-pointer ${activePage === "home" ? "bg-orange text-white hover:bg-white hover:text-orange hover:border-orange" : "bg-sky-blue text-white hover:bg-white hover:text-sky-blue hover:border-sky-blue"}`} >
                     {activePage === "home" ? "Second Page" : "Home Page"}</button>
             </div>
             <div className='max-w-360 w-full mx-auto flex items-center justify-center mt-50'>
