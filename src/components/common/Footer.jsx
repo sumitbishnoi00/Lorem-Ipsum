@@ -1,0 +1,40 @@
+import React from 'react'
+import { FOOTER_LINKS } from '../../utils/helper'
+
+const Footer = () => {
+    return (
+        <footer className='px-3 min-h-95.25 mt-[98.25px] bg-charcoal-black rounded-t-[30px] flex items-center justify-center'>
+            <div className='max-w-360 w-full mx-auto'>
+                <div className='max-w-296 w-full mx-auto flex max-[800px]:flex-wrap max-md:items-center justify-center  md:justify-between gap-40 pl-5.5 pr-52.25'>
+                    <div className='flex flex-col gap-4 max-w-107.75 w-full'>
+                        <h1 className='font-bold text-[38px] leading-[100%] text-orange'>Logo <span className='text-white'>Here</span></h1>
+                        <p className='font-normal text-[16px] leading-[140%] text-light-gray'>Lorem ipsum dolor sit amet consectetur. Metus mattis cum sem integer est. Amet fringilla tristique hendrerit vestibulum diam est penatibus interdum imperdiet. Duis ut libero suspendisse arcu erat. Pulvinar in est.</p>
+                    </div>
+                    <div className='max-w-98.5 w-full grid min-[450px]:grid-cols-2 gap-38'>
+                        {FOOTER_LINKS.map((section, index) => (
+
+                            <div key={index} className='gap-6 flex flex-col'>
+                                <h3 className='font-semibold text-[18px] leading-[150%] text-white'>{section.title}</h3>
+
+                                <ul className='text-light-gray space-y-4'>
+                                    {section.links.map((link, idx) => (
+
+                                        <li key={idx}>
+                                            <a href="/" className='font-normal text-[16px] leading-[100%]'>{link}</a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className='w-full border mt-14.5 border-very-light-gray'></div>
+
+                <p className='font-normal text-[16px] leading-[100%] text-center text-light-gray mt-6'>Copyright©2024 (Logo) All Rights Reserved.</p>
+            </div>
+        </footer>
+    )
+}
+
+export default Footer
