@@ -6,7 +6,7 @@ const Cards = () => {
 
     const [yearly, setYearly] = useState(false);
     return (
-        <section className='section-3 px-3 mt-36.25'>
+        <section className='section-3 px-3 md:mt-36.25 sm:mt-30 mt-15 '>
             <div className='max-w-360 w-full mx-auto flex flex-col items-center justify-center'>
                 <h2 className='font-semibold text-[40px] leading-[100%] text-black text-center'>Powerful features for <span className='text-bright-blue'>powerful <span className='azure-blue'>creators</span></span></h2>
                 <p className='font-normal text-[20px] leading-[100%] text-light-black mt-5'>Choose a plan that’s right for you</p>

@@ -108,3 +108,70 @@ export const FOOTER_LINKS = [
         ],
     },
 ];
+
+export const SWIPER_DATA = [
+  {
+    image: "/assets/mountain.webp",
+  },
+  {
+    image: "/assets/dolor.webp",
+  },
+  {
+    image: "/assets/tree-lake.webp",
+  },
+  {
+    image: "/assets/tree.webp",
+  },
+  {
+    image: "/assets/mountain.webp",
+  },
+  {
+    image: "/assets/dolor.webp",
+  },
+  {
+    image: "/assets/tree-lake.webp",
+  },
+  {
+    image: "/assets/tree.webp",
+  },
+  {
+    image: "/assets/mountain.webp",
+  },
+  {
+    image: "/assets/dolor.webp",
+  },
+  {
+    image: "/assets/tree-lake.webp",
+  },
+  {
+    image: "/assets/tree.webp",
+  },
+];
+
+export const STATS_DATA = [
+
+  {
+    title: "Lorem ipsum",
+    description: "We have developed, capitalized, advised, and invested in $XXXmm of renewable energy projects over our careers."
+  },
+  {
+    title: "Lorem ipsum",
+    description: "We have developed, capitalized, advised, and invested in $XXXmm of renewable energy projects over our careers."
+  },
+  {
+    title: "Lorem ipsum",
+    description: "We have developed, capitalized, advised, and invested in $XXXmm of renewable energy projects over our careers."
+  },
+  {
+    title: "Lorem ipsum",
+    description: "We have developed, capitalized, advised, and invested in $XXXmm of renewable energy projects over our careers."
+  },
+  {
+    title: "Lorem ipsum",
+    description: "We have developed, capitalized, advised, and invested in $XXXmm of renewable energy projects over our careers."
+  },
+  {
+    title: "Lorem ipsum",
+    description: "We have developed, capitalized, advised, and invested in $XXXmm of renewable energy projects over our careers."
+  }
+]

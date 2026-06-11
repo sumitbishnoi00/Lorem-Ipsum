@@ -13,10 +13,10 @@ const About = () => {
     const [isStart, setIsStart] = useState(true);
     const [isEnd, setIsEnd] = useState(false);
     return (
-        <section className='section-2 px-3 mt-33.75'>
-            <div className='max-w-360 w-full mx-auto px-[148.5px]'>
+        <section className='section-2 px-3 mt-10 sm:mt-20 md:mt-33.75'>
+            <div className='max-w-360 w-full mx-auto px-3 sm:px-6 lg:px-[148.5px]'>
 
-                <h2 className='font-semibold text-[40px] leading-[100%] text-black text-center mb-10'>Lorem ipsum</h2>
+                <h2 className='font-semibold lg:text-[40px] sm:text-3xl text-2xl leading-[100%] text-black text-center mb-10'>Lorem ipsum</h2>
 
                 <Swiper
                     spaceBetween={20}
@@ -33,7 +33,7 @@ const About = () => {
                         setIsStart(swiper.isStart);
                         setIsEnd(swiper.isEnd);
                     }}
-                    breakpoints={{
+                    breakpoints={{ 
                         320: {
                             slidesPerView: 1,
                         },

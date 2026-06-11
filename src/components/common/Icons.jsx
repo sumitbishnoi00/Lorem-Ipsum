@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Icons = ({ icon, className, pathName }) => {
+const  Icons = ({ icon, className, pathName }) => {
 
     const Icons = {
 
