@@ -14,7 +14,7 @@ const Stats = () => {
         <div className="card grid md:grid-cols-3 min-[540px]:grid-cols-2  justify-center gap-6 mt-10 ">
           {STATS_DATA.map((item, index) => (
 
-            <Card key={index} title={item.title} description={item.description} bgColor="bg-light-blue" />
+            <Card key={index} title={item.title} description={item.description} bgColor="bg-light-blue" text='text-dark-sky' iconColor='fill-dark-sky' />
           ))}
         </div>
       </div>

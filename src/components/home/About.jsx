@@ -48,7 +48,7 @@ const About = () => {
                 >
                     {CARD_DATA.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <Card title={item.title} description={item.desc} />
+                            <Card title={item.title} description={item.desc} text="text-orange" />
                         </SwiperSlide>
                     ))}
                 </Swiper>

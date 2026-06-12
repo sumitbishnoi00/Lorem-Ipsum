@@ -1,5 +1,6 @@
 import React from 'react'
 import { FOOTER_LINKS } from '../../utils/helper'
+import { Link } from 'react-router-dom'
 
 const Footer = ({ activePage }) => {
     return (
@@ -20,7 +21,7 @@ const Footer = ({ activePage }) => {
                                     {section.links.map((link, idx) => (
 
                                         <li key={idx}>
-                                            <a href="/" className='font-normal text-[16px] leading-[100%]'>{link}</a>
+                                            <Link to={"/"} className='font-normal text-[16px] leading-[100%]'>{link}</Link>
                                         </li>
                                     ))}
                                 </ul>
